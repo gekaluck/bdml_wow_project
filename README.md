@@ -22,3 +22,18 @@ Dataset: https://archive.ics.uci.edu/ml/datasets/Seoul+Bike+Sharing+Demand
 ![image](https://user-images.githubusercontent.com/26655645/160290809-6fb7a9a9-d096-4619-b1ec-3be388666f98.png)
 
 ![image](https://user-images.githubusercontent.com/26655645/160290813-41e70d78-f781-4093-9f0f-ad9e48675f5c.png)
+
+## Conclusion
+
+- The model developed with LigthGBM algorithm and thorough data preprocessing has shown solid performance beating headless AI (h2o.ai)
+
+- Except for some days/hours with unusual demand, the model prediction on test data yields low relative error
+
+- MEA is 84, while target variable values range from 3 to 3365, which I consider a decent performance
+
+- Model can be used to predict bike sharing demand in Seoul; however, I assume extrapolation is not appropriate and a new model should be built to predict bike sharing demand in other cities, since context is crucial.
+
+- Even though it would probably not be appropriate to use this model in other settings, the project has shown all steps necessary to recreate such a model in case the analogous data is available
+
+- I expect significant increase in performance after training on 2-3 additional years of observations
+
